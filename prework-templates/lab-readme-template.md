@@ -12,10 +12,12 @@ We have just learned how to [... add ...] so let's practice a bit more.
 
 1. Fork this repo.
 2. Clone this repo.
+3. Add your instructor and the class graders as collaborators to your repository. If you are unsure who your class graders are, ask your instructor or refer to the day 1 slide deck.
+4. In the repository, create a Java project and add the code for the following prompts.
 
 ## Submission
 
-Once you finish the assignment, submit a URL link to your pull request in the field on Student Portal.
+Once you finish the assignment, submit a URL link to your repository or your pull request in the field on Student Portal.
 
 <br>
 
