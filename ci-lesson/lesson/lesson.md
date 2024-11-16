@@ -65,6 +65,16 @@ problems of its own.
   In short, when contrasted with the older model, a structure based on CI/CD
   practices allows for a more predictable and reliable development process.
 
+#### Example: Traditional vs. Modern CI Workflow  
+**Traditional Workflow:**  
+1. Teams work separately for months.  
+2. Code is merged manually, resulting in integration conflicts.  
+3. Testing is delayed until the end, often leading to major rework.  
+
+**Modern CI Workflow:**  
+1. Developers push code changes daily.  
+2. Changes are automatically tested and integrated into the main branch.  
+3. Teams resolve issues incrementally, maintaining steady progress.  
 
 ### Concept 1 Definition
 
