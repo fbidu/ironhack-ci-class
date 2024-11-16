@@ -113,11 +113,17 @@ Notice how testing - and automated testing at that - is a key part of the CI/CD.
 Without a reliable test suite, it would be impossible to ensure that the changes
 made to the codebase are safe to deploy.
 
-### Concept 2 Definition
+### GitHub Actions
 
-[🚨 to be removed, only for SME eyes🚨 - start]
-[*Repeat the process for Concept 2, maintaining a consistent structure for clarity.*]
-[🚨 to be removed, only for SME eyes🚨 - end]
+CI and CD pipelines must be executed _somewhere_. Normally a server. There are
+many different ways to setup this and we can even do manually, using shell scripts
+and other forms of custom automation.
+
+GitHub Actions is an automation tool integrated into GitHub repositories.
+It enables users to create workflows triggered by events like `push`, `pull_request`,
+or scheduled tasks like daily or weekly.
+Workflows are defined using YAML files and consist of jobs
+that execute steps to perform specific tasks.  
 
 <br>  <!-- don't remove -->
 
