@@ -76,11 +76,23 @@ problems of its own.
 2. Changes are automatically tested and integrated into the main branch.  
 3. Teams resolve issues incrementally, maintaining steady progress.  
 
-### Concept 1 Definition
+### CI/CD
 
-[🚨 to be removed, only for SME eyes🚨 - start]
-[*Define the first concept in clear and straightforward language. Use this section to provide the foundational knowledge necessary for understanding the examples.*]
-[🚨 to be removed, only for SME eyes🚨 - end]
+Continuous Integration (CI) refers to the practice of automatically integrating
+code changes into a shared repository, followed by automated testing.
+
+Continuous Deployment (CD) extends this process by automatically deploying
+validated changes to production environments.
+
+The key in both of them is automation - all of this is done automatically, without
+human intervention. Once a CI/CD pipeline is set up, it will run automatically
+under some conditions, such as a new commit to the repository, a new Pull Request,
+or a new release.
+
+Different companies and projects may use different CI/CD pipelines and triggers,
+but the fundamental idea is the same - automate the process of integrating, testing,
+and deploying code changes.
+
 <br>  <!-- don't remove -->
 
 #### Concept 1 Example
