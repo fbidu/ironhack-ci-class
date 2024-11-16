@@ -145,17 +145,40 @@ jobs:
       run: echo "Hello, World!"
 ```
 
-[🚨 to be removed, only for SME eyes🚨 - start]
-[*Provide a practical example or code demonstration for Concept 2. Make sure the example reinforces the associated learning objectives.*]
-[🚨 to be removed, only for SME eyes🚨 - end]
+After saving that file in the root of your repository as `.github/workflows/hello.yml`, pushing a code change will trigger the workflow to run.
 
-<br>  <!-- don't remove -->
+After that, you can see the workflow running in the "Actions" tab of your repository:
 
-<!-- Continue adding concepts and examples as needed -->
+![sample](images/gha1.png)
 
-## Additional Resources :clipboard: 
+#### Example 2
 
-If you would like to study these concepts before the class or would benefit from some remedial studying, please utilize the resources below:
+Now, a more robust example. This workflow will checkout the code from the repository,
+setup Java and Maven, run the tests, and build the application.
 
-- [External resource 1](link-to-external-resource-1)
-- [External resource 2](link-to-external-resource-2)
+
+```yaml
+name: CI Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: "adopt"
+          java-version: "17"
+
+      - name: Build and test with Maven
+        run: mvn clean verify
+```
