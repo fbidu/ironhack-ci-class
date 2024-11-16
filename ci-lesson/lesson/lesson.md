@@ -127,7 +127,23 @@ that execute steps to perform specific tasks.
 
 <br>  <!-- don't remove -->
 
-#### Concept 2 Example
+#### Example
+
+Github actions can run arbitrary commands, like running tests, building the
+application, or deploying it to a server. Here is an example of a simple
+GitHub Actions workflow that simply prints "Hello, World!".
+
+```yaml
+name: Hello World
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Say Hello
+      run: echo "Hello, World!"
+```
 
 [🚨 to be removed, only for SME eyes🚨 - start]
 [*Provide a practical example or code demonstration for Concept 2. Make sure the example reinforces the associated learning objectives.*]
