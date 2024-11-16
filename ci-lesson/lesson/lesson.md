@@ -95,13 +95,23 @@ and deploying code changes.
 
 <br>  <!-- don't remove -->
 
-#### Concept 1 Example
+#### Example
 
-[🚨 to be removed, only for SME eyes🚨 - start]
-[*Present a relevant example or code snippet that illustrates Concept 1. Ensure that the example aligns with the learning objectives and helps participants apply the theoretical knowledge.*]
-[🚨 to be removed, only for SME eyes🚨 - end]
+Imagine a team working on a Java application. Each time a developer pushes code
+to a feature branch, the CI/CD pipeline does the following:
 
-<br>  <!-- don't remove -->
+1. Runs unit tests to ensure the new code doesn’t break existing functionality.  
+2. Builds the application into a deployable artifact.  
+3. Optionally deploys the changes to a staging or production server.
+
+And finally, once the branch is merged into the main branch, the pipeline runs
+again to ensure the changes are still valid. In some cases, the pipeline may
+require that the branch is up-to-date with the main branch before merging,
+so that the integration is as smooth as possible.
+
+Notice how testing - and automated testing at that - is a key part of the CI/CD.
+Without a reliable test suite, it would be impossible to ensure that the changes
+made to the codebase are safe to deploy.
 
 ### Concept 2 Definition
 
