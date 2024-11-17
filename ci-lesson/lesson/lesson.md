@@ -182,3 +182,11 @@ jobs:
       - name: Build and test with Maven
         run: mvn clean verify
 ```
+
+## Additional Resources :books:
+
+If you would like to study these concepts before the class or would benefit from some remedial studying, please utilize the resources below:
+
+[GitHub Actions Documentation](https://docs.github.com/en/actions)
+[Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation](https://www.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912)
+[Top 10 Rules For Continuous Integration](https://youtube.com/watch?v=Xl62gQpAl1w)
