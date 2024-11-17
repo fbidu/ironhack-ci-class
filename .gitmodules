@@ -1,3 +1,0 @@
-[submodule "ci-lesson/slides/reveal.js"]
-	path = ci-lesson/slides/reveal.js
-	url = https://github.com/hakimel/reveal.js.git
