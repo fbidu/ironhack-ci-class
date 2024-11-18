@@ -1,0 +1,35 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: "temurin"
+          java-version: "17"
+          cache: "maven"
+
+      - name: Build and test with Maven
+        run: mvn clean verify -f ./ci-lesson/sample_code/pom.xml
+
+        # Step 4: Generate Documentation (Example Output)
+      - name: Generate docs
+        run: mvn javadoc:javadoc -f ./ci-lesson/sample_code/pom.xml
+
+      # Step 5: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./ci-lesson/sample_code/target/reports/apidocs
